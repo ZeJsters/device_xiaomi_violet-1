@@ -15,13 +15,12 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common RevengeOS stuff.
 IS_PHONE := true
-$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/reloaded/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := revengeos_violet
+PRODUCT_NAME := reloaded_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
