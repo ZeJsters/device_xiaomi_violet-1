@@ -13,15 +13,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common RevengeOS stuff.
+# Inherit some common HalogenOS stuff.
 IS_PHONE := true
-$(call inherit-product, vendor/revengeos/config/common.mk)
-
-TARGET_BOOT_ANIMATION_RES := 1080
-REVENGEOS_BUILDTYPE := OFFICIAL
+$(call inherit-product, $(CUSTOM_VENDOR_DIR)/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := revengeos_violet
+PRODUCT_NAME := aosp_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
